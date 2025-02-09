@@ -16,11 +16,11 @@ void main(){
         scanf("%d", &arr[i]);
     }
 
-    int i = arr[0];
+
     printf("Array elements are : {");
-    for ( i ; i <= size; i++)
+    for (int i=0 ; i < size; i++)
     {
-        printf("%d ", i);
+        printf("%d ", arr[i]);
     }
     printf("}");
 
