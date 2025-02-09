@@ -34,6 +34,5 @@ int main(void)
             occur = count;
         }
     }
-
     printf("Most repeated element in the array is %d occured %d", element, occur);
 }
