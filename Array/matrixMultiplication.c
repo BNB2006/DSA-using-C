@@ -11,6 +11,15 @@ void main()
     int arr2[row][col];
     int arr3[row][col];
 
+    // Initialize arr3 with 0
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            arr3[i][j] = 0;
+        }
+    }
+
     printf("Enter elements of the first Matrix :\n");
     for (int i = 0; i < row; i++)
     {
@@ -29,21 +38,17 @@ void main()
         }
     }
 
-    // Additon of Matrix
-    // for (int i = 0; i < row; i++)
-    // {
-    //     for (int j = 0; j < col; j++)
-    //     {
-    //         for (int k = 0; k < j; k++)
-    //         {
-    //             arr3[i][j]=arr1[i][k]*arr2[k][j];
-    //         }
-            
-    //     }
-    // }
+    // Multiply matrices
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            for (int k = 0; k < col; k++) {
+                arr3[i][j] += arr1[i][k] * arr2[k][j];
+            }
+        }
+    }
 
     printf("\nResult :-\n");
-     for (int i = 0; i < row; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {

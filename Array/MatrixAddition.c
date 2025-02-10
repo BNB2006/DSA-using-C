@@ -7,9 +7,9 @@ void main()
     printf("Enter the rows and columns of the matrix : ");
     scanf("%d%d", &row, &col);
 
-    int arr1[row][col];
-    int arr2[row][col];
-    int arr3[row][col];
+    int arr1[3][3];
+    int arr2[3][3];
+    int arr3[3][3];
 
     printf("Enter elements of the first Matrix :\n");
     for (int i = 0; i < row; i++)
@@ -38,7 +38,7 @@ void main()
         }
     }
 
-    printf("\nResult :-\n");
+    printf("\nAddition of arr1 and arr2 is :-\n");
      for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)

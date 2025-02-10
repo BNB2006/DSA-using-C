@@ -19,10 +19,10 @@ void DeleteElement(int arr[], int *size)
 
 void main()
 {
-    int arr[15], size;
-    printf("Enter the size of the Array(size<=15) :");
+    int size;
+    printf("Enter the size of the Array:");
     scanf("%d", &size);
-
+    int arr[size];
     printf("Enter the elements of the array\n");
     for (int i = 0; i < size; i++)
     {
@@ -31,7 +31,7 @@ void main()
 
     DeleteElement(arr, &size);
 
-    printf("Reversed array elements are : { ");
+    printf("array elements are : { ");
     for (int i = 0; i < size; i++)
     {
         printf("%d ", arr[i]);

@@ -6,8 +6,7 @@ void main(){
     scanf("%d%d",&rows,&cols);
 
     int matrix[rows][cols], transpose[cols][rows];
-
-    //initialize matrix
+    
     printf("Enter the elements of the matrix :\n");
     for (int i = 0; i < rows; i++)
     {
