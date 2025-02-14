@@ -13,6 +13,7 @@ int LinearSearch(int arr[],int *size,int target){
 }
 int main(){
     int size, target;
+    printf("Searching using Linear search...\n");
     printf("Enter size of the array : ");
     scanf("%d",&size);
 

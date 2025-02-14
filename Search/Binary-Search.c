@@ -9,7 +9,7 @@ int BinarySearch(int arr[],int *size,int target){
         mid=(low+high)/2;
         if (arr[mid]==target)
         {
-            printf("Element found at index %d",mid);
+            printf("Element found at position %d",mid+1);
             return 0;
         }else if(arr[mid] < target){
             low=mid+1;
@@ -27,6 +27,7 @@ int BinarySearch(int arr[],int *size,int target){
 
 int main(){
     int size, low, high, mid, target;
+    printf("Searching using Binary search...\n");
     printf("Enter size of the array : ");
     scanf("%d",&size);
 
