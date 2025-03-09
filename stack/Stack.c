@@ -38,7 +38,6 @@ void pop()
 }
 
 
-
 void display()
 {
     int i;
