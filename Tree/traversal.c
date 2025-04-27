@@ -54,9 +54,9 @@
         f->left= g;
         f->right = h;
         g->right = i;
-        h->left = k;
+        h->right = k;
         i->left = j;
-        j->left = j->right = i->right = g->left = k->left = k->right = h->right = NULL;
+        j->left = j->right = i->right = g->left = k->left = k->right = h->left = NULL;
 
         printf("The Tree is : \n");
         printf("    %c\n",f->data);
