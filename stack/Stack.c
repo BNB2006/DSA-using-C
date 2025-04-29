@@ -24,7 +24,6 @@ void push()
 
 void pop()
 {
-    int item;
     if (top == -1)
     {
         printf("Stack underflow\n");

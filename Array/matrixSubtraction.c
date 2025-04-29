@@ -1,36 +1,31 @@
-//write program to subtract two matrix
+// Write a program to subtract two matrices
 #include <stdio.h>
 
 void main()
 {
-    int row, col;
-    printf("Enter the rows and columns of the matrix : ");
-    scanf("%d%d", &row, &col);
-
-    int arr1[row][col];
-    int arr2[row][col];
-    int arr3[row][col];
+    int arr1[3][3];
+    int arr2[3][3];
+    int arr3[3][3];
 
     printf("Enter elements of the first Matrix :\n");
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < col; j++)
+        for (int j = 0; j < 3; j++)
         {
             scanf("%d", &arr1[i][j]);
         }
     }
 
     printf("Enter elements of the second Matrix :\n");
-    for (int i = 0; i < row; i++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int j = 0; j < col; j++)
+        for (int j = 0; j < 3; j++)
         {
             scanf("%d", &arr2[i][j]);
         }
     }
 
-    
-    // Subtraction of Matrix
+    // Subtraction of Matrices
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -40,7 +35,7 @@ void main()
     }
 
     printf("\nResult :-\n");
-     for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
